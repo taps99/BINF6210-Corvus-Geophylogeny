@@ -8,6 +8,11 @@ The purpose of this project was to use publicly available sequence data combined
 First, the acquisition of sequence data from NCBI using the Rentrez package, followed by quality control and filtering. Then, occurrence data was acquired from GBIF, and also underwent quality control and filtering steps.
 Then, a MUSCLE sequence alignment was done, ensuring that sequences with large amounts of gaps will be penalized. The results of the alignment were then converted to a distance matrix, which was then used to generate the geophylogeny alongside the GBIF occurrence data.
 
+
+![image](https://github.com/taps99/BINF6210-Corvus-Geophylogeny/assets/88162045/ee14f96c-7c38-466c-af6b-aa5ee19a02de)
+
+
+
 ### Discussion
 
 As mentioned in the introduction, there are at least 46 extant members of the Corvus genus. This genus also exhibits a widespread distribution across the world. As a result, I wanted to investigate the link between geography and diversification for this genus. For this analysis, I chose cytochrome c oxidase subunit I (COI) as the marker of choice for analyzing sequence data for the Corvus genus. This mitochondrial gene is commonly used in phylogenetic analyses, and has also been used in the study of phylogenetic relationships for members of this genus (Mansha et al., 2021). During my analysis, I was only able to acquire COI sequence data for only 15 of the 46 known species of this genus from NCBI. Therefore, the results of this analysis do not encompass the entirety of the Corvus genus. However, I was still able to achieve promising results by the end of my analysis. I used the Nucleotide database from NCBI to get the COI sequence data for this genus. During my search, I chose to filter the sequence length parameter so that it would only return sequences of 400 to 700 base pairs. COI is usually near 650 base pairs in length, so I thought that filtering for sequence length will  give me more accurate hits. After filtering the sequence data, I generated a histogram to showcase the distribution of COI sequence lengths for this genus (Figure 1). After this, I was able to successfuly align the sequences, and then use the results of my alignment to generate clusters for the members of this genus. Different models were tested during the generation of these clusters, and I found that they all gave similar results. 
